@@ -10,7 +10,7 @@ source:
   sha256: aa692fbd06d8ed4ad641feee2970062fe01120e87b645a29403c71c628639e4f
 
 build:
-  number: 10
+  number: 11
   skip: True  # [win]
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -23,7 +23,7 @@ requirements:
   host:
     - python
     - setuptools >=25
-    - rocksdb 6
+    - rocksdb 8
     - bzip2
     - cython >=0.20,<3
     - zlib
